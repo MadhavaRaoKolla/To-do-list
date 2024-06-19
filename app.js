@@ -9,6 +9,7 @@ const addTask = () => {
     }
     else if(editTask){
         editTask.firstChild.textContent=inputbox.value;
+        editTask.classList.add('updated');
         editTask=null;
         add.innerHTML="Add";
     }
@@ -43,6 +44,7 @@ listbox.addEventListener('click',(e) => {
         inputbox.value=e.target.parentElement.firstChild.textContent;
         add.innerHTML="Update";
         editTask = e.target.parentElement;
+        editTask.classList.remove('updated');
         // console.log(editTask);
     }
 });
