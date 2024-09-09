@@ -1,269 +1,333 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg,rgb(241, 244, 155),rgb(202, 221, 231));
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(241, 244, 155), rgb(202, 221, 231));
 }
 
-.title{
-    margin: 40px;
-    padding: 5px;
+.title {
+  margin: 40px;
+  padding: 5px;
 }
 
-.title h2{
-    display: flex;
-    align-items: center;
-    font-size: 2.5rem;
-    font-family: Nunito;
+.title h2 {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-family: Nunito;
 }
 
-.title img{
-    height: 4rem;
-    width: 4rem;
-    margin-left: 10px;
-    animation: pic 2s infinite;
+.title img {
+  height: 4rem;
+  width: 4rem;
+  margin-left: 10px;
+  animation: pic 2s infinite;
 }
 
-.container{
-    width: 500px;
-    background: linear-gradient(145deg, #ff9a9e , #fad0c4 , #fad0c4 );
-    padding: 15px;
-    border-radius: 15px;
-    margin: 0px 5px 0px 5px;
-    box-shadow: 5px 14px 8px rgba(0, 0, 0, 0.1);
+.container {
+  width: 500px;
+  background: linear-gradient(145deg, #ff9a9e, #fad0c4, #fad0c4);
+  padding: 15px;
+  border-radius: 15px;
+  margin: 0px 5px 0px 5px;
+  box-shadow: 5px 14px 8px rgba(0, 0, 0, 0.1);
 }
 
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f0f0f0;
-    padding: 5px 10px;
-    margin-bottom: 1rem;
-    border-radius: 2rem;
-    animation: slideIn 0.5s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  animation: slideIn 0.5s ease-out;
 }
 
-input{
-    flex: 1;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 10px;
-    font-size: 1rem;
-    font-family: Roboto;
-    transition: border-bottom 0.3s ease;
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: Roboto;
+  transition: border-bottom 0.3s ease;
 }
 
-input:focus{
-    border-bottom: 2px solid #ff4a39;
+input:focus {
+  border-bottom: 2px solid #ff4a39;
 }
 
 .button {
-    border: none;
-    padding: 8px 15px;
-    background-color: #f3b85f;
-    cursor: pointer;
-    border-radius: 25px;
-    font-size: 1rem;
-    transition: transform 0.3s ease;
+  border: none;
+  padding: 8px 15px;
+  background-color: #f3b85f;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
 }
 
-.button:hover{
-    transform: scale(1.1);
-    transition: 0.2s ease;
+.button:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease;
 }
-    
+
 li {
-    list-style: none;
-    font-size: 1.2em;
-    font-family: Roboto;
-    padding: 10px 8px 10px 50px;
-    position: relative;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    background-color: #ece9e9;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    animation: explosion 1s;
+  list-style: none;
+  font-size: 1.2em;
+  font-family: Roboto;
+  padding: 10px 8px 10px 50px;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #ece9e9;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: explosion 1s;
 }
-    
+
 li::before {
-    content: '';
-    position: absolute;
-    height: 1.7rem;
-    width: 1.7rem;
-    background-image: url(./task.png);
-    background-size: cover;
-    top: 9px;
-    left: 10px;
+  content: "";
+  position: absolute;
+  height: 1.7rem;
+  width: 1.7rem;
+  background-image: url(./task.png);
+  background-size: cover;
+  top: 9px;
+  left: 10px;
 }
-    
-li:hover{
-    background-color: #d9f1dc;
-    transform: scale(1.04);
+
+li:hover {
+  background-color: #d9f1dc;
+  transform: scale(1.04);
 }
 
 .checked {
-    color: #888888;
-    text-decoration: line-through;
-    background-color: #d0d0d0;
+  color: #888888;
+  text-decoration: line-through;
+  background-color: #d0d0d0;
 }
-    
+
 .checked::before {
-    background-image: url(./tick.png);
+  background-image: url(./tick.png);
 }
 
 span {
-    position: absolute;
-    right: 10px;
-    top: 7px;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    color: black;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  color: black;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
-    
+
 span:hover {
-    background-color: #f45647;
-    color: #ffffff;
-    transform: rotate(360deg);
+  background-color: #f45647;
+  color: #ffffff;
+  transform: rotate(360deg);
 }
 
 .edit:hover {
-    background-color: #f6f178;
-    transform: rotate(360deg);
+  background-color: #f6f178;
+  transform: rotate(360deg);
 }
 
-.edit{
-    position: absolute;
-    border: none;
-    right: 45px;
-    background: transparent;
-    border-radius: 30%;
-    line-height: 10px;
-    height: 25px;
-    font-family: Roboto;
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    top: 0.7rem;
-    padding: 0px 5px;
-    font-size: 0.8rem;
+.edit {
+  position: absolute;
+  border: none;
+  right: 45px;
+  background: transparent;
+  border-radius: 30%;
+  line-height: 10px;
+  height: 25px;
+  font-family: Roboto;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  top: 0.7rem;
+  padding: 0px 5px;
+  font-size: 0.8rem;
 }
 
 .updated {
-    animation: spread 1.5s ease-in-out;
+  animation: spread 1.5s ease-in-out;
 }
 
 @keyframes spread {
-    0% { transform: scaleX(0); }
-    100% { transform: scaleX(1); }
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 @keyframes explosion {
-    0% { transform: scale(0.1); opacity: 0; }
-    50% { transform: scale(1.1); opacity: 0.5; }
-    100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes pic {
-    0% { transform: scale(1); }
-    25%{transform: rotate(90deg) scale(1.1) ;}
-    50% { transform: rotate(270deg) scale(1.2); }
-    100% { transform: rotate(0deg) scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(270deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
 }
 
 @keyframes slideIn {
-    0% { transform: translateX(-100%); opacity: 0; }
-    100% { transform: translateX(0); opacity: 1; }
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-@media (max-width:340px){
-    .title h2{ font-size: 1.3em; }
-    .title img{
-        height: 30px;
-        width: 30px;
-    }
-    .container{
-        width: 300px;
-        padding: 8px;
-    }
-    .row{ padding: 0 1px; }
-    .button{
-        padding: 7px 8px; font-size: 0.8em;
-        margin-right: 2px;
-    }
-    li{ font-size: 0.9em; }
-    .edit,span{ top: 7px;}
-    li::before{ height: 20px; width: 20px; }
-    span{
-        height: 22px; width: 22px;
-        line-height: 23px;
-    }
+@media (max-width: 340px) {
+  .title h2 {
+    font-size: 1.3em;
+  }
+  .title img {
+    height: 30px;
+    width: 30px;
+  }
+  .container {
+    width: 300px;
+    padding: 8px;
+  }
+  .row {
+    padding: 0 1px;
+  }
+  .button {
+    padding: 7px 8px;
+    font-size: 0.8em;
+    margin-right: 2px;
+  }
+  li {
+    font-size: 0.9em;
+  }
+  .edit,
+  span {
+    top: 7px;
+  }
+  li::before {
+    height: 20px;
+    width: 20px;
+  }
+  span {
+    height: 22px;
+    width: 22px;
+    line-height: 23px;
+  }
 }
 
-@media (min-width:340px) and (max-width:410px){
-    .title h2{  font-size: 1.7em; }
-    .title img{
-        height: 35px;
-        width: 35px;
-    }
-    .container{ width: 320px; padding: 15px;  }
-    .row{   padding: 0px 3px;   }
-    li{ font-size: 0.9em; }
-    .button{
-        padding: 7px 10px; font-size:0.8em;
-        margin-right: 2px;
-    }
-    li::before{
-        height: 22px;
-        width: 22px;
-        top: 8px;
-    }
-    span{
-        height: 24px;
-        width: 24px;
-        line-height: 24px;
-    }
-    .edit,span{ top: 8px;}
+@media (min-width: 340px) and (max-width: 410px) {
+  .title h2 {
+    font-size: 1.7em;
+  }
+  .title img {
+    height: 35px;
+    width: 35px;
+  }
+  .container {
+    width: 320px;
+    padding: 15px;
+  }
+  .row {
+    padding: 0px 3px;
+  }
+  li {
+    font-size: 0.9em;
+  }
+  .button {
+    padding: 7px 10px;
+    font-size: 0.8em;
+    margin-right: 2px;
+  }
+  li::before {
+    height: 22px;
+    width: 22px;
+    top: 8px;
+  }
+  span {
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+  }
+  .edit,
+  span {
+    top: 8px;
+  }
 }
 
-@media (min-width:410px) and (max-width:520px) {
-    .title h2{  font-size: 2em; }
-    .title img{
-        height: 3rem;
-        width: 3rem;
-    }
-    .button{
-        padding: 7px 10px;
-        font-size: 0.9em;
-    }
-    li::before{
-        height: 25px;
-        width: 25px;
-        top: 7px;
-    }
-    span{
-        height: 25px;
-        width: 25px;
-        top: 5px;
-        line-height: 25px;
-    }
-    .edit{ top: 7px;}
-    .container{ width: 390px;   }
-    .row{   padding: 2px 5px;   }
-    li{ font-size: 1em; }
+@media (min-width: 410px) and (max-width: 520px) {
+  .title h2 {
+    font-size: 2em;
+  }
+  .title img {
+    height: 3rem;
+    width: 3rem;
+  }
+  .button {
+    padding: 7px 10px;
+    font-size: 0.9em;
+  }
+  li::before {
+    height: 25px;
+    width: 25px;
+    top: 7px;
+  }
+  span {
+    height: 25px;
+    width: 25px;
+    top: 5px;
+    line-height: 25px;
+  }
+  .edit {
+    top: 7px;
+  }
+  .container {
+    width: 390px;
+  }
+  .row {
+    padding: 2px 5px;
+  }
+  li {
+    font-size: 1em;
+  }
 }

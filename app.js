@@ -1,7 +1,7 @@
 const inputbox = document.querySelector("#inputbox"); //elem / null
-const listbox = document.querySelector("#listbox");
+const listbox = document.querySelector("#listbox"); //all tasks user enters
 const add = document.querySelector(".button"); //node
-let editTask = null;
+let editTask = null; //apend li which needs to be edited
 // const listbox = document.getElementById("listbox"); //elem / null
 // const inputbox = document.getElementById("inputbox");
 
